@@ -1,0 +1,59 @@
+.card {
+    border-radius: 20px;
+    background: rgb(248, 248, 248);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    &__name {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 140%;
+        text-align: left;
+        min-height: 44px;
+        margin-bottom: 20px;
+    }
+    &__salary {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    &__experience {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    &__more {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        &-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            text-align: left;
+            display: block;
+            padding-bottom: 4px;
+            width: max-content;
+            border-bottom: 1px solid rgb(19, 19, 19);
+        }
+        svg {
+            display: flex;
+            flex-shrink: 0;
+        }
+    }
+}

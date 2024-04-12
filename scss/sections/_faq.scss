@@ -1,0 +1,106 @@
+.accordion__item:not(.accordion__item_show) .accordion__body {
+    display: none;
+}
+.faq {
+    padding: 55px 0;
+    &__accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 100px;
+        &-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px 40px;
+            border-radius: 20px;
+            background: rgb(248, 248, 248);
+        }
+        &-icon {
+            display: flex;
+            flex-shrink: 0;
+            path {
+                transition: .3s all;
+            }
+        }
+        &-title {
+            color: rgb(109, 109, 109);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 120%;
+            text-align: left;
+        }
+        &-item.accordion__item_show {
+            .faq__accordion-icon {
+                path {
+                    &:last-of-type {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        &-item.accordion__item_slidedown {
+            .faq__accordion-icon {
+                path {
+                    &:last-of-type {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+    &__card {
+        &-body {
+            padding: 30px 20px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 140%;
+            text-align: left;
+        }
+        &-text {
+            color: rgb(19, 19, 19);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 140%;
+            text-align: left;
+        }
+    }
+}
+@media (max-width: 1022px) {
+    .faq {
+        &__accordion {
+            padding-left: 0;
+        }
+    }
+}
+@media (max-width: 798px) {
+    .faq {
+        &__accordion {
+            &-title {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 606px) {
+    .faq {
+        &__accordion {
+            &-header {
+                padding: 20px;
+            }
+            &-title {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .faq {
+        &__accordion {
+            &-title {
+                font-size: 16px;
+            }
+        }
+    }
+}
