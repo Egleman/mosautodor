@@ -1,0 +1,153 @@
+@media (hover: hover) {
+    .header__list-link {
+        &:hover {
+            &::after {
+                opacity: 1;
+                bottom: -8px;
+            }
+        }
+    }
+    .footer__list-link {
+        &:hover {
+            &::after {
+                opacity: 1;
+                bottom: -8px;
+            }
+        }
+    }
+    .hero__button_orange {
+        &:hover {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
+    .hero__button_white {
+        &:hover {
+            color: #fff;
+            background: rgb(246, 144, 0);
+        }
+    }
+    .good__button {
+        &:hover {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+    }
+    .good__slide-button {
+        &:hover {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
+    .card__button {
+        &:hover {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
+    .variable__block-link {
+        &:hover {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
+    .instructions__tabs-tab {
+        &:hover {
+            color: rgb(121, 186, 42);
+            background: rgb(255, 255, 255);
+        }
+    }
+    .articles__list-link {
+        &:hover {
+            background: #fff;
+            color: rgb(121, 186, 42);  
+        }
+    }
+    .contacts__form-button {
+        &:hover  {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
+    .contacts__middle-link {
+        &:hover {
+            color: #fff;
+            background: rgb(121, 186, 42);
+        }
+    }
+}
+
+@media (hover: none) {
+    .header__list-link {
+        &:active {
+            &::after {
+                opacity: 1;
+                bottom: -8px;
+            }
+        }
+    }
+    .footer__list-link {
+        &:active {
+            &::after {
+                opacity: 1;
+                bottom: -8px;
+            }
+        }
+    }
+    .hero__button_orange {
+        &:active {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
+    .hero__button_white {
+        &:active {
+            color: #fff;
+            background: rgb(246, 144, 0);
+        }
+    }
+    .good__button {
+        &:active {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+        }
+    }
+    .good__slide-button {
+        &:active {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
+    .card__button {
+        &:active {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
+    .variable__block-link {
+        &:active {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
+    .instructions__tabs-tab {
+        &:active {
+            color: rgb(121, 186, 42);
+            background: rgb(255, 255, 255);
+        }
+    }
+    .articles__list-link {
+        &:active {
+            background: #fff;
+            color: rgb(121, 186, 42);  
+        }
+    }
+    .contacts__form-button {
+        &:active  {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
+}
