@@ -40,19 +40,4 @@
         max-width: 692px;
         width: 100%;
     }
-    &__link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 24px 50px;
-        box-sizing: border-box;
-        border-radius: 10px;
-        background: rgb(248, 248, 248);
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-        text-align: left;
-        text-transform: uppercase;
-        max-width: max-content;
-    }
 }

@@ -185,6 +185,31 @@ q {
     height: 95px;
   }
 }
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 24px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  background: rgb(248, 248, 248);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: left;
+  text-transform: uppercase;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
 .header {
   padding: 30px 0 27px 0;
   background: #fff;
@@ -375,30 +400,6 @@ q {
   max-width: 692px;
   width: 100%;
 }
-.hero__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 24px 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 10px;
-  background: rgb(248, 248, 248);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 17px;
-  text-align: left;
-  text-transform: uppercase;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-}
 
 .mobile-menu {
   position: fixed;
@@ -475,103 +476,5 @@ q {
   .mobile-menu.close .mobile-menu__body {
     -webkit-animation: closeMoveMobileMenu 0.3s forwards;
             animation: closeMoveMobileMenu 0.3s forwards;
-  }
-}
-@media (hover: hover) {
-  .header__list-link:hover::after {
-    opacity: 1;
-    bottom: -8px;
-  }
-  .footer__list-link:hover::after {
-    opacity: 1;
-    bottom: -8px;
-  }
-  .hero__button_orange:hover {
-    background: #fff;
-    color: rgb(246, 144, 0);
-  }
-  .hero__button_white:hover {
-    color: #fff;
-    background: rgb(246, 144, 0);
-  }
-  .good__button:hover {
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-  }
-  .good__slide-button:hover {
-    background: #fff;
-    color: rgb(246, 144, 0);
-  }
-  .card__button:hover {
-    background: #fff;
-    color: rgb(246, 144, 0);
-  }
-  .variable__block-link:hover {
-    background: #fff;
-    color: rgb(246, 144, 0);
-  }
-  .instructions__tabs-tab:hover {
-    color: rgb(121, 186, 42);
-    background: rgb(255, 255, 255);
-  }
-  .articles__list-link:hover {
-    background: #fff;
-    color: rgb(121, 186, 42);
-  }
-  .contacts__form-button:hover {
-    background: #fff;
-    color: rgb(246, 144, 0);
-  }
-  .contacts__middle-link:hover {
-    color: #fff;
-    background: rgb(121, 186, 42);
-  }
-}
-@media (hover: none) {
-  .header__list-link:active::after {
-    opacity: 1;
-    bottom: -8px;
-  }
-  .footer__list-link:active::after {
-    opacity: 1;
-    bottom: -8px;
-  }
-  .hero__button_orange:active {
-    background: #fff;
-    color: rgb(246, 144, 0);
-  }
-  .hero__button_white:active {
-    color: #fff;
-    background: rgb(246, 144, 0);
-  }
-  .good__button:active {
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-  }
-  .good__slide-button:active {
-    background: #fff;
-    color: rgb(246, 144, 0);
-  }
-  .card__button:active {
-    background: #fff;
-    color: rgb(246, 144, 0);
-  }
-  .variable__block-link:active {
-    background: #fff;
-    color: rgb(246, 144, 0);
-  }
-  .instructions__tabs-tab:active {
-    color: rgb(121, 186, 42);
-    background: rgb(255, 255, 255);
-  }
-  .articles__list-link:active {
-    background: #fff;
-    color: rgb(121, 186, 42);
-  }
-  .contacts__form-button:active {
-    background: #fff;
-    color: rgb(246, 144, 0);
   }
 }/*# sourceMappingURL=style.css.map */
