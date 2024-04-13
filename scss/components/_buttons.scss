@@ -12,7 +12,28 @@
     text-align: left;
     text-transform: uppercase;
     max-width: max-content;
+    transition: .3s all;
+    white-space: nowrap;
     &_center {
         margin: 0 auto;
+    }
+}
+@media (max-width: 375px) {
+    .button {
+        padding: 24px 40px;
+    }
+}
+@media (hover: hover) {
+    .button {
+        &:hover {
+            background: rgb(233, 233, 233);
+        }
+    }
+}
+@media (hover: none) {
+    .button {
+        &:active {
+            background: rgb(233, 233, 233);
+        }
     }
 }

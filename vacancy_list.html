@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ГБУ МО «Мосавтодор»</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="/" class="header__logo">
+                        <img class="header__logo-img" src="./img/ico-logo.png" alt="logo-image">
+                        <p class="header__logo-text">
+                            Мосавтодор<br>
+                            <span>вакансии компании</span>
+                        </p>
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__list-item"><a href="#" class="header__list-link">Вакансии</a></li>
+                            <li class="header__list-item"><a href="#" class="header__list-link">Вопрос ответ</a></li>
+                            <li class="header__list-item"><a href="#" class="header__list-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <a href="tel:88002506880" class="header__phone">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.5569 11.406L12.1019 11.859C12.1019 11.859 11.0189 12.935 8.06386 9.99698C5.10886 7.05898 6.19186 5.98298 6.19186 5.98298L6.47786 5.69698C7.18486 4.99498 7.25186 3.86698 6.63486 3.04298L5.37486 1.35998C4.61086 0.339979 3.13586 0.20498 2.26086 1.07498L0.690856 2.63498C0.257856 3.06698 -0.032144 3.62498 0.002856 4.24498C0.092856 5.83198 0.810856 9.24498 4.81486 13.227C9.06186 17.449 13.0469 17.617 14.6759 17.465C15.1919 17.417 15.6399 17.155 16.0009 16.795L17.4209 15.383C18.3809 14.43 18.1109 12.795 16.8829 12.128L14.9729 11.089C14.1669 10.652 13.1869 10.78 12.5569 11.406Z"
+                                fill="#131313" />
+                        </svg>
+                        8 800 250 68 80
+                    </a>
+                    <button class="header__burger">
+                        <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L26 2" stroke="black" stroke-width="2.5" stroke-linecap="round" />
+                            <path d="M2 10L26 10" stroke="black" stroke-width="2.5" stroke-linecap="round" />
+                            <path d="M2 18L26 18" stroke="black" stroke-width="2.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item"><a href="#" class="breadcrumbs__list-link">Главная</a></li>
+                        <li class="breadcrumbs__list-item"><span class="breadcrumbs__list-link">/</span></li>
+                        <li class="breadcrumbs__list-item"><a href="#" class="breadcrumbs__list-link disable">Доступные вакансии</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="vacancys">
+                <div class="container">
+                    <h1 class="vacancys__title">доступные Вакансии</h1>
+                    <a href="#" class="button vacancys__button">Фильтр</a>
+                    <div class="vacancys__wrapper">
+                        <form action="#" class="vacancys__filters">
+                            <button class="vacancys__filters-close">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.51465 8.51465L25.4852 25.4852" stroke="black" stroke-width="2.5"
+                                        stroke-linecap="round" />
+                                    <path d="M25.4854 8.51465L8.51479 25.4852" stroke="black" stroke-width="2.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <div class="vacancys__filters-block">
+                                <p class="vacancys__filters-name">Уровень дохода</p>
+                                <input type="radio" name="salary" id="salary-1">
+                                <label for="salary-1">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Не имеет значения <span>12</span></p>
+                                </label>
+                                <input type="radio" name="salary" id="salary-2">
+                                <label for="salary-2">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">от 30.000 рублей <span>12</span></p>
+                                </label>
+                                <input type="radio" name="salary" id="salary-3">
+                                <label for="salary-3">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">от 60.000 рублей <span>12</span></p>
+                                </label>
+                                <input type="radio" name="salary" id="salary-4">
+                                <label for="salary-4">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">от 60.000 рублей <span>2</span></p>
+                                </label>
+                                <input type="radio" name="salary" id="salary-5">
+                                <label for="salary-5">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">от 60.000 рублей <span>2</span></p>
+                                </label>
+                                <input type="radio" name="salary" id="salary-6">
+                                <label for="salary-6" class="hidden" data-label="hidden">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">от 12.345 рублей <span>2</span></p>
+                                </label>
+                                <input type="radio" name="salary" id="salary-7">
+                                <label for="salary-7" class="hidden" data-label="hidden">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">от 67.891 рублей <span>2</span></p>
+                                </label>
+                                <a href="#" class="vacancys__filters-button">Показать ещё</a>
+                            </div>
+                            <div class="vacancys__filters-block">
+                                <p class="vacancys__filters-name">Регион</p>
+                                <input type="radio" name="region" id="region-1">
+                                <label for="region-1">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Не имеет значения <span>12</span></p>
+                                </label>
+                                <input type="radio" name="region" id="region-2">
+                                <label for="region-2">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Рязань <span>12</span></p>
+                                </label>
+                                <input type="radio" name="region" id="region-3">
+                                <label for="region-3">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Рязанская обл. <span>12</span></p>
+                                </label>
+                                <input type="radio" name="region" id="region-4">
+                                <label for="region-4">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Рязанский район <span>2</span></p>
+                                </label>
+                                <input type="radio" name="region" id="region-5">
+                                <label for="region-5">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Рязанский район <span>2</span></p>
+                                </label>
+                                <input type="radio" name="region" id="region-6">
+                                <label for="region-6" class="hidden" data-label="hidden">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Китай город <span>2</span></p>
+                                </label>
+                                <input type="radio" name="region" id="region-7">
+                                <label for="region-7" class="hidden" data-label="hidden">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Жешарт <span>2</span></p>
+                                </label>
+                                <a href="#" class="vacancys__filters-button">Показать ещё</a>
+                            </div>
+                            <div class="vacancys__filters-block">
+                                <p class="vacancys__filters-name">Специализация</p>
+                                <input type="radio" name="specialization" id="specialization-1">
+                                <label for="specialization-1">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Не имеет значения <span>12</span></p>
+                                </label>
+                                <input type="radio" name="specialization" id="specialization-2">
+                                <label for="specialization-2">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Монтажник <span>12</span></p>
+                                </label>
+                                <input type="radio" name="specialization" id="specialization-3">
+                                <label for="specialization-3">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Инженер <span>12</span></p>
+                                </label>
+                                <input type="radio" name="specialization" id="specialization-4">
+                                <label for="specialization-4">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Руководитель <span>2</span></p>
+                                </label>
+                                <input type="radio" name="specialization" id="specialization-5">
+                                <label for="specialization-5">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Укладчик <span>2</span></p>
+                                </label>
+                                <input type="radio" name="specialization" id="specialization-6">
+                                <label for="specialization-6" class="hidden" data-label="hidden">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Водитель <span>2</span></p>
+                                </label>
+                                <input type="radio" name="specialization" id="specialization-7">
+                                <label for="specialization-7" class="hidden" data-label="hidden">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Пиццамйкер <span>2</span></p>
+                                </label>
+                                <a href="#" class="vacancys__filters-button">Показать ещё</a>
+                            </div>
+                            <div class="vacancys__filters-block">
+                                <p class="vacancys__filters-name">Опыт работы</p>
+                                <input type="radio" name="experience" id="experience-1">
+                                <label for="experience-1">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Не имеет значения <span>12</span></p>
+                                </label>
+                                <input type="radio" name="experience" id="experience-2">
+                                <label for="experience-2">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">От 1 года до 3 лет <span>12</span></p>
+                                </label>
+                                <input type="radio" name="experience" id="experience-3">
+                                <label for="experience-3">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">От 3 до 6 лет <span>12</span></p>
+                                </label>
+                                <input type="radio" name="experience" id="experience-4">
+                                <label for="experience-4">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Более 6 лет <span>2</span></p>
+                                </label>
+                                <input type="radio" name="experience" id="experience-5">
+                                <label for="experience-5">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Без опыта <span>2</span></p>
+                                </label>
+                                <input type="radio" name="experience" id="experience-6">
+                                <label for="experience-6" class="hidden" data-label="hidden">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Более 8 лет <span>2</span></p>
+                                </label>
+                                <input type="radio" name="experience" id="experience-7">
+                                <label for="experience-7" class="hidden" data-label="hidden">
+                                    <div class="vacancys__filters-checkbox">
+                                        <div class="vacancys__filters-circle"></div>
+                                    </div>
+                                    <p class="vacancys__filters-text">Более 10 лет <span>2</span></p>
+                                </label>
+                                <a href="#" class="vacancys__filters-button">Показать ещё</a>
+                            </div>
+                            <button type="submit" class="button vacancys__filters-submit">Применить</button>
+                        </form>
+                        <div class="vacancys__grid">
+                            <div class="card">
+                                <p class="card__name">Монтажник РЭАиП</p>
+                                <p class="card__salary">60.000 - 100.000 рублей</p>
+                                <p class="card__experience">Без опыта</p>
+                                <a href="tel:84912216331" class="card__phone">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5569 11.406L12.1019 11.859C12.1019 11.859 11.0189 12.935 8.06386 9.997C5.10886 7.059 6.19186 5.983 6.19186 5.983L6.47786 5.697C7.18486 4.995 7.25186 3.867 6.63486 3.043L5.37486 1.36C4.61086 0.340002 3.13586 0.205002 2.26086 1.075L0.690856 2.635C0.257856 3.067 -0.032144 3.625 0.002856 4.245C0.092856 5.832 0.810856 9.245 4.81486 13.227C9.06186 17.449 13.0469 17.617 14.6759 17.465C15.1919 17.417 15.6399 17.155 16.0009 16.795L17.4209 15.383C18.3809 14.43 18.1109 12.795 16.8829 12.128L14.9729 11.089C14.1669 10.652 13.1869 10.78 12.5569 11.406Z" fill="#131313"/>
+                                    </svg>                                    
+                                    8 (4912) 21 63 31
+                                </a>
+                                <a href="#" class="card__more">
+                                    <p class="card__more-text">Откликнуться</p>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0578 31.6922C21.9997 31.6342 21.9536 31.5652 21.9221 31.4894C21.8907 31.4135 21.8745 31.3321 21.8745 31.25C21.8745 31.1679 21.8907 31.0865 21.9221 31.0107C21.9536 30.9348 21.9997 30.8659 22.0578 30.8078L32.2406 20.625L6.25 20.625C6.08424 20.625 5.92526 20.5592 5.80806 20.442C5.69084 20.3247 5.625 20.1658 5.625 20C5.625 19.8343 5.69084 19.6753 5.80806 19.5581C5.92526 19.4409 6.08424 19.375 6.25 19.375L32.2406 19.375L22.0578 9.1922C21.9997 9.13413 21.9537 9.06519 21.9223 8.98932C21.8908 8.91345 21.8746 8.83213 21.8746 8.75001C21.8746 8.66789 21.8908 8.58657 21.9223 8.5107C21.9537 8.43483 21.9997 8.36589 22.0578 8.30782C22.1159 8.24975 22.1848 8.20369 22.2607 8.17227C22.3366 8.14084 22.4179 8.12466 22.5 8.12466C22.5821 8.12466 22.6634 8.14084 22.7393 8.17227C22.8152 8.20369 22.8841 8.24975 22.9422 8.30782L34.1922 19.5578C34.2503 19.6159 34.2964 19.6848 34.3278 19.7607C34.3593 19.8365 34.3755 19.9179 34.3755 20C34.3755 20.0821 34.3593 20.1635 34.3278 20.2394C34.2964 20.3152 34.2503 20.3842 34.1922 20.4422L22.9422 31.6922C22.8841 31.7503 22.8152 31.7964 22.7393 31.8279C22.6635 31.8593 22.5821 31.8755 22.5 31.8755C22.4179 31.8755 22.3365 31.8593 22.2607 31.8279C22.1848 31.7964 22.1159 31.7503 22.0578 31.6922Z" fill="#131313"/>
+                                    </svg>                                    
+                                </a>
+                            </div>
+                            <div class="card">
+                                <p class="card__name">Монтажник РЭАиП</p>
+                                <p class="card__salary">60.000 - 100.000 рублей</p>
+                                <p class="card__experience">Без опыта</p>
+                                <a href="tel:84912216331" class="card__phone">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5569 11.406L12.1019 11.859C12.1019 11.859 11.0189 12.935 8.06386 9.997C5.10886 7.059 6.19186 5.983 6.19186 5.983L6.47786 5.697C7.18486 4.995 7.25186 3.867 6.63486 3.043L5.37486 1.36C4.61086 0.340002 3.13586 0.205002 2.26086 1.075L0.690856 2.635C0.257856 3.067 -0.032144 3.625 0.002856 4.245C0.092856 5.832 0.810856 9.245 4.81486 13.227C9.06186 17.449 13.0469 17.617 14.6759 17.465C15.1919 17.417 15.6399 17.155 16.0009 16.795L17.4209 15.383C18.3809 14.43 18.1109 12.795 16.8829 12.128L14.9729 11.089C14.1669 10.652 13.1869 10.78 12.5569 11.406Z" fill="#131313"/>
+                                    </svg>                                    
+                                    8 (4912) 21 63 31
+                                </a>
+                                <a href="#" class="card__more">
+                                    <p class="card__more-text">Откликнуться</p>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0578 31.6922C21.9997 31.6342 21.9536 31.5652 21.9221 31.4894C21.8907 31.4135 21.8745 31.3321 21.8745 31.25C21.8745 31.1679 21.8907 31.0865 21.9221 31.0107C21.9536 30.9348 21.9997 30.8659 22.0578 30.8078L32.2406 20.625L6.25 20.625C6.08424 20.625 5.92526 20.5592 5.80806 20.442C5.69084 20.3247 5.625 20.1658 5.625 20C5.625 19.8343 5.69084 19.6753 5.80806 19.5581C5.92526 19.4409 6.08424 19.375 6.25 19.375L32.2406 19.375L22.0578 9.1922C21.9997 9.13413 21.9537 9.06519 21.9223 8.98932C21.8908 8.91345 21.8746 8.83213 21.8746 8.75001C21.8746 8.66789 21.8908 8.58657 21.9223 8.5107C21.9537 8.43483 21.9997 8.36589 22.0578 8.30782C22.1159 8.24975 22.1848 8.20369 22.2607 8.17227C22.3366 8.14084 22.4179 8.12466 22.5 8.12466C22.5821 8.12466 22.6634 8.14084 22.7393 8.17227C22.8152 8.20369 22.8841 8.24975 22.9422 8.30782L34.1922 19.5578C34.2503 19.6159 34.2964 19.6848 34.3278 19.7607C34.3593 19.8365 34.3755 19.9179 34.3755 20C34.3755 20.0821 34.3593 20.1635 34.3278 20.2394C34.2964 20.3152 34.2503 20.3842 34.1922 20.4422L22.9422 31.6922C22.8841 31.7503 22.8152 31.7964 22.7393 31.8279C22.6635 31.8593 22.5821 31.8755 22.5 31.8755C22.4179 31.8755 22.3365 31.8593 22.2607 31.8279C22.1848 31.7964 22.1159 31.7503 22.0578 31.6922Z" fill="#131313"/>
+                                    </svg>                                    
+                                </a>
+                            </div>
+                            <div class="card">
+                                <p class="card__name">Монтажник РЭАиП</p>
+                                <p class="card__salary">60.000 - 100.000 рублей</p>
+                                <p class="card__experience">Без опыта</p>
+                                <a href="tel:84912216331" class="card__phone">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5569 11.406L12.1019 11.859C12.1019 11.859 11.0189 12.935 8.06386 9.997C5.10886 7.059 6.19186 5.983 6.19186 5.983L6.47786 5.697C7.18486 4.995 7.25186 3.867 6.63486 3.043L5.37486 1.36C4.61086 0.340002 3.13586 0.205002 2.26086 1.075L0.690856 2.635C0.257856 3.067 -0.032144 3.625 0.002856 4.245C0.092856 5.832 0.810856 9.245 4.81486 13.227C9.06186 17.449 13.0469 17.617 14.6759 17.465C15.1919 17.417 15.6399 17.155 16.0009 16.795L17.4209 15.383C18.3809 14.43 18.1109 12.795 16.8829 12.128L14.9729 11.089C14.1669 10.652 13.1869 10.78 12.5569 11.406Z" fill="#131313"/>
+                                    </svg>                                    
+                                    8 (4912) 21 63 31
+                                </a>
+                                <a href="#" class="card__more">
+                                    <p class="card__more-text">Откликнуться</p>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0578 31.6922C21.9997 31.6342 21.9536 31.5652 21.9221 31.4894C21.8907 31.4135 21.8745 31.3321 21.8745 31.25C21.8745 31.1679 21.8907 31.0865 21.9221 31.0107C21.9536 30.9348 21.9997 30.8659 22.0578 30.8078L32.2406 20.625L6.25 20.625C6.08424 20.625 5.92526 20.5592 5.80806 20.442C5.69084 20.3247 5.625 20.1658 5.625 20C5.625 19.8343 5.69084 19.6753 5.80806 19.5581C5.92526 19.4409 6.08424 19.375 6.25 19.375L32.2406 19.375L22.0578 9.1922C21.9997 9.13413 21.9537 9.06519 21.9223 8.98932C21.8908 8.91345 21.8746 8.83213 21.8746 8.75001C21.8746 8.66789 21.8908 8.58657 21.9223 8.5107C21.9537 8.43483 21.9997 8.36589 22.0578 8.30782C22.1159 8.24975 22.1848 8.20369 22.2607 8.17227C22.3366 8.14084 22.4179 8.12466 22.5 8.12466C22.5821 8.12466 22.6634 8.14084 22.7393 8.17227C22.8152 8.20369 22.8841 8.24975 22.9422 8.30782L34.1922 19.5578C34.2503 19.6159 34.2964 19.6848 34.3278 19.7607C34.3593 19.8365 34.3755 19.9179 34.3755 20C34.3755 20.0821 34.3593 20.1635 34.3278 20.2394C34.2964 20.3152 34.2503 20.3842 34.1922 20.4422L22.9422 31.6922C22.8841 31.7503 22.8152 31.7964 22.7393 31.8279C22.6635 31.8593 22.5821 31.8755 22.5 31.8755C22.4179 31.8755 22.3365 31.8593 22.2607 31.8279C22.1848 31.7964 22.1159 31.7503 22.0578 31.6922Z" fill="#131313"/>
+                                    </svg>                                    
+                                </a>
+                            </div>
+                            <div class="card">
+                                <p class="card__name">Монтажник РЭАиП</p>
+                                <p class="card__salary">60.000 - 100.000 рублей</p>
+                                <p class="card__experience">Без опыта</p>
+                                <a href="tel:84912216331" class="card__phone">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5569 11.406L12.1019 11.859C12.1019 11.859 11.0189 12.935 8.06386 9.997C5.10886 7.059 6.19186 5.983 6.19186 5.983L6.47786 5.697C7.18486 4.995 7.25186 3.867 6.63486 3.043L5.37486 1.36C4.61086 0.340002 3.13586 0.205002 2.26086 1.075L0.690856 2.635C0.257856 3.067 -0.032144 3.625 0.002856 4.245C0.092856 5.832 0.810856 9.245 4.81486 13.227C9.06186 17.449 13.0469 17.617 14.6759 17.465C15.1919 17.417 15.6399 17.155 16.0009 16.795L17.4209 15.383C18.3809 14.43 18.1109 12.795 16.8829 12.128L14.9729 11.089C14.1669 10.652 13.1869 10.78 12.5569 11.406Z" fill="#131313"/>
+                                    </svg>                                    
+                                    8 (4912) 21 63 31
+                                </a>
+                                <a href="#" class="card__more">
+                                    <p class="card__more-text">Откликнуться</p>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0578 31.6922C21.9997 31.6342 21.9536 31.5652 21.9221 31.4894C21.8907 31.4135 21.8745 31.3321 21.8745 31.25C21.8745 31.1679 21.8907 31.0865 21.9221 31.0107C21.9536 30.9348 21.9997 30.8659 22.0578 30.8078L32.2406 20.625L6.25 20.625C6.08424 20.625 5.92526 20.5592 5.80806 20.442C5.69084 20.3247 5.625 20.1658 5.625 20C5.625 19.8343 5.69084 19.6753 5.80806 19.5581C5.92526 19.4409 6.08424 19.375 6.25 19.375L32.2406 19.375L22.0578 9.1922C21.9997 9.13413 21.9537 9.06519 21.9223 8.98932C21.8908 8.91345 21.8746 8.83213 21.8746 8.75001C21.8746 8.66789 21.8908 8.58657 21.9223 8.5107C21.9537 8.43483 21.9997 8.36589 22.0578 8.30782C22.1159 8.24975 22.1848 8.20369 22.2607 8.17227C22.3366 8.14084 22.4179 8.12466 22.5 8.12466C22.5821 8.12466 22.6634 8.14084 22.7393 8.17227C22.8152 8.20369 22.8841 8.24975 22.9422 8.30782L34.1922 19.5578C34.2503 19.6159 34.2964 19.6848 34.3278 19.7607C34.3593 19.8365 34.3755 19.9179 34.3755 20C34.3755 20.0821 34.3593 20.1635 34.3278 20.2394C34.2964 20.3152 34.2503 20.3842 34.1922 20.4422L22.9422 31.6922C22.8841 31.7503 22.8152 31.7964 22.7393 31.8279C22.6635 31.8593 22.5821 31.8755 22.5 31.8755C22.4179 31.8755 22.3365 31.8593 22.2607 31.8279C22.1848 31.7964 22.1159 31.7503 22.0578 31.6922Z" fill="#131313"/>
+                                    </svg>                                    
+                                </a>
+                            </div>
+                            <div class="card">
+                                <p class="card__name">Монтажник РЭАиП</p>
+                                <p class="card__salary">60.000 - 100.000 рублей</p>
+                                <p class="card__experience">Без опыта</p>
+                                <a href="tel:84912216331" class="card__phone">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5569 11.406L12.1019 11.859C12.1019 11.859 11.0189 12.935 8.06386 9.997C5.10886 7.059 6.19186 5.983 6.19186 5.983L6.47786 5.697C7.18486 4.995 7.25186 3.867 6.63486 3.043L5.37486 1.36C4.61086 0.340002 3.13586 0.205002 2.26086 1.075L0.690856 2.635C0.257856 3.067 -0.032144 3.625 0.002856 4.245C0.092856 5.832 0.810856 9.245 4.81486 13.227C9.06186 17.449 13.0469 17.617 14.6759 17.465C15.1919 17.417 15.6399 17.155 16.0009 16.795L17.4209 15.383C18.3809 14.43 18.1109 12.795 16.8829 12.128L14.9729 11.089C14.1669 10.652 13.1869 10.78 12.5569 11.406Z" fill="#131313"/>
+                                    </svg>                                    
+                                    8 (4912) 21 63 31
+                                </a>
+                                <a href="#" class="card__more">
+                                    <p class="card__more-text">Откликнуться</p>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0578 31.6922C21.9997 31.6342 21.9536 31.5652 21.9221 31.4894C21.8907 31.4135 21.8745 31.3321 21.8745 31.25C21.8745 31.1679 21.8907 31.0865 21.9221 31.0107C21.9536 30.9348 21.9997 30.8659 22.0578 30.8078L32.2406 20.625L6.25 20.625C6.08424 20.625 5.92526 20.5592 5.80806 20.442C5.69084 20.3247 5.625 20.1658 5.625 20C5.625 19.8343 5.69084 19.6753 5.80806 19.5581C5.92526 19.4409 6.08424 19.375 6.25 19.375L32.2406 19.375L22.0578 9.1922C21.9997 9.13413 21.9537 9.06519 21.9223 8.98932C21.8908 8.91345 21.8746 8.83213 21.8746 8.75001C21.8746 8.66789 21.8908 8.58657 21.9223 8.5107C21.9537 8.43483 21.9997 8.36589 22.0578 8.30782C22.1159 8.24975 22.1848 8.20369 22.2607 8.17227C22.3366 8.14084 22.4179 8.12466 22.5 8.12466C22.5821 8.12466 22.6634 8.14084 22.7393 8.17227C22.8152 8.20369 22.8841 8.24975 22.9422 8.30782L34.1922 19.5578C34.2503 19.6159 34.2964 19.6848 34.3278 19.7607C34.3593 19.8365 34.3755 19.9179 34.3755 20C34.3755 20.0821 34.3593 20.1635 34.3278 20.2394C34.2964 20.3152 34.2503 20.3842 34.1922 20.4422L22.9422 31.6922C22.8841 31.7503 22.8152 31.7964 22.7393 31.8279C22.6635 31.8593 22.5821 31.8755 22.5 31.8755C22.4179 31.8755 22.3365 31.8593 22.2607 31.8279C22.1848 31.7964 22.1159 31.7503 22.0578 31.6922Z" fill="#131313"/>
+                                    </svg>                                    
+                                </a>
+                            </div>
+                            <div class="card">
+                                <p class="card__name">Монтажник РЭАиП</p>
+                                <p class="card__salary">60.000 - 100.000 рублей</p>
+                                <p class="card__experience">Без опыта</p>
+                                <a href="tel:84912216331" class="card__phone">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5569 11.406L12.1019 11.859C12.1019 11.859 11.0189 12.935 8.06386 9.997C5.10886 7.059 6.19186 5.983 6.19186 5.983L6.47786 5.697C7.18486 4.995 7.25186 3.867 6.63486 3.043L5.37486 1.36C4.61086 0.340002 3.13586 0.205002 2.26086 1.075L0.690856 2.635C0.257856 3.067 -0.032144 3.625 0.002856 4.245C0.092856 5.832 0.810856 9.245 4.81486 13.227C9.06186 17.449 13.0469 17.617 14.6759 17.465C15.1919 17.417 15.6399 17.155 16.0009 16.795L17.4209 15.383C18.3809 14.43 18.1109 12.795 16.8829 12.128L14.9729 11.089C14.1669 10.652 13.1869 10.78 12.5569 11.406Z" fill="#131313"/>
+                                    </svg>                                    
+                                    8 (4912) 21 63 31
+                                </a>
+                                <a href="#" class="card__more">
+                                    <p class="card__more-text">Откликнуться</p>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0578 31.6922C21.9997 31.6342 21.9536 31.5652 21.9221 31.4894C21.8907 31.4135 21.8745 31.3321 21.8745 31.25C21.8745 31.1679 21.8907 31.0865 21.9221 31.0107C21.9536 30.9348 21.9997 30.8659 22.0578 30.8078L32.2406 20.625L6.25 20.625C6.08424 20.625 5.92526 20.5592 5.80806 20.442C5.69084 20.3247 5.625 20.1658 5.625 20C5.625 19.8343 5.69084 19.6753 5.80806 19.5581C5.92526 19.4409 6.08424 19.375 6.25 19.375L32.2406 19.375L22.0578 9.1922C21.9997 9.13413 21.9537 9.06519 21.9223 8.98932C21.8908 8.91345 21.8746 8.83213 21.8746 8.75001C21.8746 8.66789 21.8908 8.58657 21.9223 8.5107C21.9537 8.43483 21.9997 8.36589 22.0578 8.30782C22.1159 8.24975 22.1848 8.20369 22.2607 8.17227C22.3366 8.14084 22.4179 8.12466 22.5 8.12466C22.5821 8.12466 22.6634 8.14084 22.7393 8.17227C22.8152 8.20369 22.8841 8.24975 22.9422 8.30782L34.1922 19.5578C34.2503 19.6159 34.2964 19.6848 34.3278 19.7607C34.3593 19.8365 34.3755 19.9179 34.3755 20C34.3755 20.0821 34.3593 20.1635 34.3278 20.2394C34.2964 20.3152 34.2503 20.3842 34.1922 20.4422L22.9422 31.6922C22.8841 31.7503 22.8152 31.7964 22.7393 31.8279C22.6635 31.8593 22.5821 31.8755 22.5 31.8755C22.4179 31.8755 22.3365 31.8593 22.2607 31.8279C22.1848 31.7964 22.1159 31.7503 22.0578 31.6922Z" fill="#131313"/>
+                                    </svg>                                    
+                                </a>
+                            </div>
+                            <div class="card">
+                                <p class="card__name">Монтажник РЭАиП</p>
+                                <p class="card__salary">60.000 - 100.000 рублей</p>
+                                <p class="card__experience">Без опыта</p>
+                                <a href="tel:84912216331" class="card__phone">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5569 11.406L12.1019 11.859C12.1019 11.859 11.0189 12.935 8.06386 9.997C5.10886 7.059 6.19186 5.983 6.19186 5.983L6.47786 5.697C7.18486 4.995 7.25186 3.867 6.63486 3.043L5.37486 1.36C4.61086 0.340002 3.13586 0.205002 2.26086 1.075L0.690856 2.635C0.257856 3.067 -0.032144 3.625 0.002856 4.245C0.092856 5.832 0.810856 9.245 4.81486 13.227C9.06186 17.449 13.0469 17.617 14.6759 17.465C15.1919 17.417 15.6399 17.155 16.0009 16.795L17.4209 15.383C18.3809 14.43 18.1109 12.795 16.8829 12.128L14.9729 11.089C14.1669 10.652 13.1869 10.78 12.5569 11.406Z" fill="#131313"/>
+                                    </svg>                                    
+                                    8 (4912) 21 63 31
+                                </a>
+                                <a href="#" class="card__more">
+                                    <p class="card__more-text">Откликнуться</p>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0578 31.6922C21.9997 31.6342 21.9536 31.5652 21.9221 31.4894C21.8907 31.4135 21.8745 31.3321 21.8745 31.25C21.8745 31.1679 21.8907 31.0865 21.9221 31.0107C21.9536 30.9348 21.9997 30.8659 22.0578 30.8078L32.2406 20.625L6.25 20.625C6.08424 20.625 5.92526 20.5592 5.80806 20.442C5.69084 20.3247 5.625 20.1658 5.625 20C5.625 19.8343 5.69084 19.6753 5.80806 19.5581C5.92526 19.4409 6.08424 19.375 6.25 19.375L32.2406 19.375L22.0578 9.1922C21.9997 9.13413 21.9537 9.06519 21.9223 8.98932C21.8908 8.91345 21.8746 8.83213 21.8746 8.75001C21.8746 8.66789 21.8908 8.58657 21.9223 8.5107C21.9537 8.43483 21.9997 8.36589 22.0578 8.30782C22.1159 8.24975 22.1848 8.20369 22.2607 8.17227C22.3366 8.14084 22.4179 8.12466 22.5 8.12466C22.5821 8.12466 22.6634 8.14084 22.7393 8.17227C22.8152 8.20369 22.8841 8.24975 22.9422 8.30782L34.1922 19.5578C34.2503 19.6159 34.2964 19.6848 34.3278 19.7607C34.3593 19.8365 34.3755 19.9179 34.3755 20C34.3755 20.0821 34.3593 20.1635 34.3278 20.2394C34.2964 20.3152 34.2503 20.3842 34.1922 20.4422L22.9422 31.6922C22.8841 31.7503 22.8152 31.7964 22.7393 31.8279C22.6635 31.8593 22.5821 31.8755 22.5 31.8755C22.4179 31.8755 22.3365 31.8593 22.2607 31.8279C22.1848 31.7964 22.1159 31.7503 22.0578 31.6922Z" fill="#131313"/>
+                                    </svg>                                    
+                                </a>
+                            </div>
+                            <div class="card">
+                                <p class="card__name">Монтажник РЭАиП</p>
+                                <p class="card__salary">60.000 - 100.000 рублей</p>
+                                <p class="card__experience">Без опыта</p>
+                                <a href="tel:84912216331" class="card__phone">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5569 11.406L12.1019 11.859C12.1019 11.859 11.0189 12.935 8.06386 9.997C5.10886 7.059 6.19186 5.983 6.19186 5.983L6.47786 5.697C7.18486 4.995 7.25186 3.867 6.63486 3.043L5.37486 1.36C4.61086 0.340002 3.13586 0.205002 2.26086 1.075L0.690856 2.635C0.257856 3.067 -0.032144 3.625 0.002856 4.245C0.092856 5.832 0.810856 9.245 4.81486 13.227C9.06186 17.449 13.0469 17.617 14.6759 17.465C15.1919 17.417 15.6399 17.155 16.0009 16.795L17.4209 15.383C18.3809 14.43 18.1109 12.795 16.8829 12.128L14.9729 11.089C14.1669 10.652 13.1869 10.78 12.5569 11.406Z" fill="#131313"/>
+                                    </svg>                                    
+                                    8 (4912) 21 63 31
+                                </a>
+                                <a href="#" class="card__more">
+                                    <p class="card__more-text">Откликнуться</p>
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.0578 31.6922C21.9997 31.6342 21.9536 31.5652 21.9221 31.4894C21.8907 31.4135 21.8745 31.3321 21.8745 31.25C21.8745 31.1679 21.8907 31.0865 21.9221 31.0107C21.9536 30.9348 21.9997 30.8659 22.0578 30.8078L32.2406 20.625L6.25 20.625C6.08424 20.625 5.92526 20.5592 5.80806 20.442C5.69084 20.3247 5.625 20.1658 5.625 20C5.625 19.8343 5.69084 19.6753 5.80806 19.5581C5.92526 19.4409 6.08424 19.375 6.25 19.375L32.2406 19.375L22.0578 9.1922C21.9997 9.13413 21.9537 9.06519 21.9223 8.98932C21.8908 8.91345 21.8746 8.83213 21.8746 8.75001C21.8746 8.66789 21.8908 8.58657 21.9223 8.5107C21.9537 8.43483 21.9997 8.36589 22.0578 8.30782C22.1159 8.24975 22.1848 8.20369 22.2607 8.17227C22.3366 8.14084 22.4179 8.12466 22.5 8.12466C22.5821 8.12466 22.6634 8.14084 22.7393 8.17227C22.8152 8.20369 22.8841 8.24975 22.9422 8.30782L34.1922 19.5578C34.2503 19.6159 34.2964 19.6848 34.3278 19.7607C34.3593 19.8365 34.3755 19.9179 34.3755 20C34.3755 20.0821 34.3593 20.1635 34.3278 20.2394C34.2964 20.3152 34.2503 20.3842 34.1922 20.4422L22.9422 31.6922C22.8841 31.7503 22.8152 31.7964 22.7393 31.8279C22.6635 31.8593 22.5821 31.8755 22.5 31.8755C22.4179 31.8755 22.3365 31.8593 22.2607 31.8279C22.1848 31.7964 22.1159 31.7503 22.0578 31.6922Z" fill="#131313"/>
+                                    </svg>                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <a href="/" class="footer__logo">
+                        <img class="footer__logo-img" src="./img/ico-logo.png" alt="logo-image">
+                        <p class="footer__logo-text">
+                            Мосавтодор<br>
+                            <span>вакансии компании</span>
+                        </p>
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Вакансии</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Вопрос ответ</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <a href="tel:88002506880" class="footer__phone">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.5569 11.406L12.1019 11.859C12.1019 11.859 11.0189 12.935 8.06386 9.99698C5.10886 7.05898 6.19186 5.98298 6.19186 5.98298L6.47786 5.69698C7.18486 4.99498 7.25186 3.86698 6.63486 3.04298L5.37486 1.35998C4.61086 0.339979 3.13586 0.20498 2.26086 1.07498L0.690856 2.63498C0.257856 3.06698 -0.032144 3.62498 0.002856 4.24498C0.092856 5.83198 0.810856 9.24498 4.81486 13.227C9.06186 17.449 13.0469 17.617 14.6759 17.465C15.1919 17.417 15.6399 17.155 16.0009 16.795L17.4209 15.383C18.3809 14.43 18.1109 12.795 16.8829 12.128L14.9729 11.089C14.1669 10.652 13.1869 10.78 12.5569 11.406Z"
+                                fill="#131313" />
+                        </svg>
+                        8 800 250 68 80
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu__body">
+            <button class="mobile-menu__close">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.51465 8.51465L25.4852 25.4852" stroke="black" stroke-width="2.5"
+                        stroke-linecap="round" />
+                    <path d="M25.4854 8.51465L8.51479 25.4852" stroke="black" stroke-width="2.5"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="mobile-menu__wrapper">
+                <ul class="header__list header__list_mobile">
+                    <li class="header__list-item"><a href="#" class="header__list-link">Вакансии</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Вопрос ответ</a>
+                    </li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Контакты</a></li>
+                </ul>
+                <a href="tel:88002506880" class="header__phone header__phone_mobile">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.5569 11.406L12.1019 11.859C12.1019 11.859 11.0189 12.935 8.06386 9.99698C5.10886 7.05898 6.19186 5.98298 6.19186 5.98298L6.47786 5.69698C7.18486 4.99498 7.25186 3.86698 6.63486 3.04298L5.37486 1.35998C4.61086 0.339979 3.13586 0.20498 2.26086 1.07498L0.690856 2.63498C0.257856 3.06698 -0.032144 3.62498 0.002856 4.24498C0.092856 5.83198 0.810856 9.24498 4.81486 13.227C9.06186 17.449 13.0469 17.617 14.6759 17.465C15.1919 17.417 15.6399 17.155 16.0009 16.795L17.4209 15.383C18.3809 14.43 18.1109 12.795 16.8829 12.128L14.9729 11.089C14.1669 10.652 13.1869 10.78 12.5569 11.406Z"
+                            fill="#131313" />
+                    </svg>
+                    8 800 250 68 80
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./script/inputmask.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

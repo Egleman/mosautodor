@@ -54,6 +54,12 @@
         svg {
             display: flex;
             flex-shrink: 0;
+            transition: .6s all;
+        }
+        &:hover {
+            svg {
+                transform: translateX(10px);
+            }
         }
     }
 }

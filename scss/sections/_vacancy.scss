@@ -1,0 +1,197 @@
+.vacancy {
+    padding: 0 0 110px 0;
+    &__top {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    &__info {
+        border-radius: 50px;
+        background: rgb(19, 19, 19);
+        padding: 30px 50px;
+        box-sizing: border-box;
+        max-width: 689px;
+        width: 100%;
+        &-title {
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 140%;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        &-salary {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 140%;
+            margin-bottom: 20px;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &-block {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        &-dot {
+            width: 6px;
+            height: 6px;
+            display: flex;
+            flex-shrink: 0;
+            border-radius: 100%;
+            background: #fff;
+        }
+        &-text {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            line-height: 140%;
+            span {
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 140%;
+            }
+        }
+    }
+    &__company {
+        max-width: 488px;
+        width: 100%;
+        &-info {
+            padding: 20px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 37px;
+        }
+        &-name {
+            color: rgb(19, 19, 19);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 140%;
+        }
+        &-description {
+            color: rgb(19, 19, 19);
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+    &__bottom {
+        display: grid;
+        grid-template-columns: 1fr 285px;
+        gap: 20px;
+    }
+    &__lists {
+        &-topgear {
+            font-size: 16px;
+            line-height: 140%;
+            margin-bottom: 33px;
+        }
+        &-block {
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+        }
+        &-label {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 140%;
+            margin-bottom: 14px;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &-wrap {
+            display: flex;
+            gap: 10px;
+        }
+        &-dot {
+            width: 6px;
+            height: 6px;
+            display: flex;
+            flex-shrink: 0;
+            border-radius: 100%;
+            background: rgb(19, 19, 19);
+            margin-top: 8px;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+    &__includes {
+        &-label {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 140%;
+            margin-bottom: 20px;
+        }
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+@media (max-width: 1022px) {
+    .vacancy {
+        &__info {
+            &-title {
+                font-size: 24px;
+            }
+            &-salary {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 798px) {
+    .vacancy {
+        &__top {
+            flex-direction: column;
+        }
+        &__info {
+            max-width: 100%;
+        }
+        &__company {
+            max-width: 100%;
+        }
+        &__button {
+            margin: 0 auto;
+        }
+        &__bottom {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+        &__includes {
+            &-wrap {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+@media (max-width: 606px) {
+    .vacancy {
+        &__info {
+            border-radius: 20px;
+            padding: 30px;
+        }
+        &__includes {
+            &-wrap {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        &__button {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
