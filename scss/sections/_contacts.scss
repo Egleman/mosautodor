@@ -104,6 +104,18 @@
         &-button {
             border: none;
         }
+        &-capcha {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 30px;
+            img {
+                // width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: flex;
+            }
+        }
     }
 }
 @media (max-width: 1022px) {

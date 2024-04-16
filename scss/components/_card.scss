@@ -4,6 +4,10 @@
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
+    transition: .3s all;
+    &:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
     &__name {
         font-size: 16px;
         font-weight: 700;

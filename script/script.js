@@ -42,7 +42,7 @@ const helpersFunc = () => {
         closeModalActions
     }
 }
-const { blockBody, closeModalActions } = helpersFunc();
+const { blockBody, closeModalActions, unBlockBody } = helpersFunc();
 const maskedInputs = () => {
     const phoneInputs = document.querySelectorAll('[data-input="masked"]');
     const im = new Inputmask({
@@ -174,12 +174,95 @@ const filterListeners = () => {
                 hiddenContents[index].querySelectorAll('[data-label="hidden"]').forEach(label => {
                     if (label.classList.contains('hidden')) label.classList.remove('hidden')
                 })
-            link.style.display = 'none';
+                link.style.display = 'none';
             })
         })
     }
 }
+
+const modalLinks = document.querySelectorAll('[toggle]');
+modalLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const blockId = link.getAttribute('toggle');
+        document.querySelector(blockId).classList.toggle('active');
+        if (document.querySelector(blockId).classList.contains('active')) {
+            blockBody();
+        } else {
+            unBlockBody();
+        }
+    })
+})
+
 header();
 maskedInputs();
 accordions();
 filterListeners();
+
+const dropArea = document.querySelector('.register__form-droparea');
+if (dropArea) {
+    const inputFile = document.querySelector('[data-input="file"]');
+    
+
+    
+
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        dropArea.addEventListener(eventName, preventDefaults, false)
+    })
+      
+    function preventDefaults (e) {
+        e.preventDefault()
+        e.stopPropagation()
+    }
+    dropArea.addEventListener('drop', handleDrop, false)
+
+    function handleDrop(e) {
+        let dt = e.dataTransfer
+        let files = dt.files
+
+        document.querySelector('.register__form-filename').textContent = files[0].name;
+    }
+    inputFile.addEventListener('change', (e) => {
+        console.log(e.target.files[0])
+        document.querySelector('.register__form-filename').textContent = e.target.files[0].name;
+    });
+}
+const tabPanel = document.querySelector('.register__form-tabs');
+
+if (tabPanel) {
+    const tabs = document.querySelectorAll('.register__form-tab');
+    const tabsContent = document.querySelectorAll('[data-block="tab-content"]')
+    tabPanel.addEventListener('click', (e) => {
+        if (e.target.closest('.register__form-tab')) {
+            const btn = e.target.closest('.register__form-tab');
+            tabs.forEach((tab, index) => {
+                if (tab === btn) {
+                    tab.classList.add('active');
+                    tabsContent[index].classList.add('active');
+                } else {
+                    if (tab.classList.contains('active')) {
+                        tab.classList.remove('active');
+                    }
+                    if (tabsContent[index].classList.contains('active')) {
+                        tabsContent[index].classList.remove('active');
+                    }
+                }
+            })
+        }
+    })
+}
+const registerSelect = document.querySelector('.register__form-select');
+if (registerSelect) {
+    const labels = document.querySelectorAll('.register__form-selectbody > label');
+    labels.forEach(label => {
+        label.addEventListener('click', () => {
+            document.querySelector('.register__form-value > p').textContent = label.textContent;
+            if (registerSelect.classList.contains('active')) {
+                registerSelect.classList.remove('active');
+            }
+        })
+    })
+    registerSelect.addEventListener('click', () => {
+        registerSelect.classList.toggle('active');
+    })
+}
